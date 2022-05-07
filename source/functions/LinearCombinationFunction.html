@@ -1,0 +1,125 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><title>LinearCombinationFunction | RACCOON</title><link rel="icon" type="image/x-icon" href="../../media/raccoon_icon.png" sizes="16x16 32x32 64x64 128x128"></link><link href="../../contrib/materialize/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"></link><link href="../../contrib/prism/prism.min.css" type="text/css" rel="stylesheet"></link><link href="../../css/moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/devel_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/alert_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/content_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/sqa_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/civet_moose.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../contrib/jquery/jquery.min.js"></script></head><body><div class="page-wrap"><header><nav><div class="nav-wrapper container"><a href="../../index.html" class="left moose-logo hide-on-med-and-down" id="home-button">RACCOON</a><a href="https://github.com/hugary1995/raccoon" class="right"><img src="../../media/framework/github-logo.png" class="github-mark"></img><img src="../../media/framework/github-mark.png" class="github-logo"></img></a><ul class="right hide-on-med-and-down"><li><a href="#!" class="dropdown-trigger" data-target="02f95499-84d3-44e6-bfd2-25ba273e9161" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="e9c921cf-d744-4f16-a71b-7aff558167e5" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="3cbe15b4-1966-44e1-9cf0-97b918224b04" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="2a4ec6af-73d8-4aac-adfd-7a46006994b7" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#" class="sidenav-trigger" data-target="d1144199-4725-4193-8d26-c252b6b1e4cf"><i class="material-icons">menu</i></a><ul class="sidenav" id="d1144199-4725-4193-8d26-c252b6b1e4cf"><li><a href="#!" class="dropdown-trigger" data-target="f33f2fba-040a-48c8-8cb1-06bafe736ee0" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="554b667c-7499-4306-9732-9b3127eafee5" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="9f0ecd96-c0cb-46c0-8f32-9051bc2f4e50" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="e3bebbea-0f5c-4676-8fa2-5bed0f00deb1" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#moose-search" class="modal-trigger"><i class="material-icons">search</i></a></div><ul class="dropdown-content" id="02f95499-84d3-44e6-bfd2-25ba273e9161"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="e9c921cf-d744-4f16-a71b-7aff558167e5"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="3cbe15b4-1966-44e1-9cf0-97b918224b04"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="2a4ec6af-73d8-4aac-adfd-7a46006994b7"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../../syntax/index.html">Complete syntax</a></li><li><a href="../../syntax/raccoon.html">RACCOON syntax</a></li><li><a href="../../syntax/tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../../syntax/phase_field.html">Phase field syntax</a></li><li><a href="../../syntax/heat_conduction.html">Heat conduction syntax</a></li></ul><ul class="dropdown-content" id="f33f2fba-040a-48c8-8cb1-06bafe736ee0"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="554b667c-7499-4306-9732-9b3127eafee5"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="9f0ecd96-c0cb-46c0-8f32-9051bc2f4e50"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="e3bebbea-0f5c-4676-8fa2-5bed0f00deb1"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../../syntax/index.html">Complete syntax</a></li><li><a href="../../syntax/raccoon.html">RACCOON syntax</a></li><li><a href="../../syntax/tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../../syntax/phase_field.html">Phase field syntax</a></li><li><a href="../../syntax/heat_conduction.html">Heat conduction syntax</a></li></ul></nav><div class="modal modal-fixed-footer moose-search-modal" id="moose-search"><div class="modal-content container moose-search-modal-content"><div class="gcse-search"></div></div><div class="modal-footer"><a href="#!" class="modal-close btn-flat">Close</a></div></div></header><main class="main"><div class="container"><div class="row"><div class="moose-content col s12 m12 l12"><section id="771cc410-3bc1-4b4c-9111-607c307ecdb3" data-section-level="1" data-section-text="LinearCombinationFunction"><h1 id="linearcombinationfunction">LinearCombinationFunction</h1><p>Returns the linear combination of the functions</p><section id="7acec06a-df05-4eca-a95b-ac51d9c8ff5f" data-section-level="2" data-section-text="Example input syntax"><h2 id="example-input-syntax">Example input syntax</h2><p>In this input file, we show how a <code>LinearCombinationFunction</code> may be used to combine a variety of different functions, then compare the results to a manually computed linear combination.</p><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[Functions]
+  [./xtimes]
+    type = ParsedFunction
+    value = 1.1*x
+  [../]
+
+  [./twoxplus1]
+    type = ParsedFunction
+    value = 2*x+1
+  [../]
+
+  [./xsquared]
+    type = ParsedFunction
+    value = (x-2)*x
+  [../]
+
+  [./tover2]
+    type = ParsedFunction
+    value = 0.5*t
+  [../]
+
+  [./the_linear_combo]
+    type = LinearCombinationFunction
+    functions = &#x27;xtimes twoxplus1 xsquared tover2&#x27;
+    w = &#x27;3 -1.2 0.4 3&#x27;
+  [../]
+
+  [./should_be_answer]
+    type = ParsedFunction
+    value = 3*1.1*x-1.2*(2*x+1)+0.4*(x-2)*x+3*0.5*t
+  [../]
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#32f00563-aa05-4554-aba7-9b93445b50c8">(moose/test/tests/functions/linear_combination_function/lcf1.i)</a></section><section id="5347e723-0f97-4b56-a101-9718d41550cb" data-section-level="2" data-section-text="Input Parameters"><h2 id="input-parameters">Input Parameters</h2><section id="7e72f439-71a9-4bd8-80e7-0a34abc7e484" data-section-level="3" data-section-text="Required Parameters" data-details-open="open"><details class="moose-section-content" open="open"><ul class="collapsible" data-collapsible="expandable"><li><div class="collapsible-header"><span class="moose-parameter-name">functions</span><span class="moose-parameter-header-description">This function will return Sum_over_i(w_i * functions_i)</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;FunctionName&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>This function will return Sum_over_i(w_i * functions_i)</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">w</span><span class="moose-parameter-header-description">This function will return Sum_over_i(w_i * functions_i)</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;double&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>This function will return Sum_over_i(w_i * functions_i)</p></div></li></ul><summary><h3 data-details-open="open"><span class="moose-section-icon"></span>Required Parameters</h3></summary></details></section><section id="1e664751-cc53-4f68-9167-134fc76da209" data-section-level="3" data-section-text="Optional Parameters" data-details-open="open"><details class="moose-section-content" open="open"><ul class="collapsible" data-collapsible="expandable"><li><div class="collapsible-header"><span class="moose-parameter-name">execute_on</span><span class="moose-parameter-header-default">LINEAR</span><span class="moose-parameter-header-description">The list of flag(s) indicating when this object should be executed, the available options include NONE, INITIAL, LINEAR, NONLINEAR, TIMESTEP_END, TIMESTEP_BEGIN, FINAL, CUSTOM, ALWAYS.</span></div><div class="collapsible-body"><p class="moose-parameter-description-default"><span>Default:</span>LINEAR</p><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>ExecFlagEnum</p><p class="moose-parameter-description-options"><span>Options:</span>NONE, INITIAL, LINEAR, NONLINEAR, TIMESTEP_END, TIMESTEP_BEGIN, FINAL, CUSTOM, ALWAYS</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>The list of flag(s) indicating when this object should be executed, the available options include NONE, INITIAL, LINEAR, NONLINEAR, TIMESTEP_END, TIMESTEP_BEGIN, FINAL, CUSTOM, ALWAYS.</p></div></li></ul><summary><h3 data-details-open="open"><span class="moose-section-icon"></span>Optional Parameters</h3></summary></details></section><section id="484ae8c8-fc88-4533-9e33-d9822e79371e" data-section-level="3" data-section-text="Advanced Parameters" data-details-open="close"><details class="moose-section-content"><ul class="collapsible" data-collapsible="expandable"><li><div class="collapsible-header"><span class="moose-parameter-name">control_tags</span><span class="moose-parameter-header-description">Adds user-defined labels for accessing object parameters via control logic.</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Adds user-defined labels for accessing object parameters via control logic.</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">enable</span><span class="moose-parameter-header-default">True</span><span class="moose-parameter-header-description">Set the enabled status of the MooseObject.</span></div><div class="collapsible-body"><p class="moose-parameter-description-default"><span>Default:</span>True</p><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>bool</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Set the enabled status of the MooseObject.</p></div></li></ul><summary><h3 data-details-open="close"><span class="moose-section-icon"></span>Advanced Parameters</h3></summary></details></section></section></section><div class="moose-modal modal" id="32f00563-aa05-4554-aba7-9b93445b50c8"><div class="modal-content"><h4>(moose/test/tests/functions/linear_combination_function/lcf1.i)</h4><pre class="moose-pre"><code class="language-text"># LinearCombinationFunction function test
+# See [Functions] block for a description of the tests
+
+[Mesh]
+  type = GeneratedMesh
+  dim = 1
+  xmin = 0
+  xmax = 2
+  nx = 10
+[]
+
+[Variables]
+  [./dummy]
+  [../]
+[]
+
+[Kernels]
+  [./dummy_u]
+    type = TimeDerivative
+    variable = dummy
+  [../]
+[]
+
+
+[AuxVariables]
+  [./the_linear_combo]
+  [../]
+[]
+
+[AuxKernels]
+  [./the_linear_combo]
+    type = FunctionAux
+    variable = the_linear_combo
+    function = the_linear_combo
+  [../]
+[]
+
+
+[Functions]
+  [./xtimes]
+    type = ParsedFunction
+    value = 1.1*x
+  [../]
+
+  [./twoxplus1]
+    type = ParsedFunction
+    value = 2*x+1
+  [../]
+
+  [./xsquared]
+    type = ParsedFunction
+    value = (x-2)*x
+  [../]
+
+  [./tover2]
+    type = ParsedFunction
+    value = 0.5*t
+  [../]
+
+  [./the_linear_combo]
+    type = LinearCombinationFunction
+    functions = &#x27;xtimes twoxplus1 xsquared tover2&#x27;
+    w = &#x27;3 -1.2 0.4 3&#x27;
+  [../]
+
+  [./should_be_answer]
+    type = ParsedFunction
+    value = 3*1.1*x-1.2*(2*x+1)+0.4*(x-2)*x+3*0.5*t
+  [../]
+[]
+
+[Postprocessors]
+  [./should_be_zero]
+    type = NodalL2Error
+    function = should_be_answer
+    variable = the_linear_combo
+  [../]
+[]
+
+[Executioner]
+  type = Transient
+  dt = 0.5
+  end_time = 1
+[]
+
+[Outputs]
+  execute_on = &#x27;timestep_end&#x27;
+  file_base = lcf1
+  hide = dummy
+  exodus = false
+  csv = true
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div></div></div></div></main></div></body><script type="text/javascript" src="../../contrib/materialize/materialize.min.js"></script><script type="text/javascript" src="../../contrib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="../../contrib/prism/prism.min.js"></script><script type="text/javascript" src="../../js/init.js"></script><script type="text/javascript" src="../../js/navigation.js"></script><script type="text/javascript" src="https://cse.google.com/cse.js?cx=008852834041008754713:g3ilnhhbbj9"></script><script type="text/javascript" src="../../js/sqa_moose.js"></script>

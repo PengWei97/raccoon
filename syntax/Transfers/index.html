@@ -1,0 +1,248 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><title>Transfers System | RACCOON</title><link rel="icon" type="image/x-icon" href="../../media/raccoon_icon.png" sizes="16x16 32x32 64x64 128x128"></link><link href="../../contrib/materialize/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"></link><link href="../../contrib/prism/prism.min.css" type="text/css" rel="stylesheet"></link><link href="../../css/moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/devel_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/alert_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/content_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/sqa_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/civet_moose.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../contrib/jquery/jquery.min.js"></script></head><body><div class="page-wrap"><header><nav><div class="nav-wrapper container"><a href="../../index.html" class="left moose-logo hide-on-med-and-down" id="home-button">RACCOON</a><a href="https://github.com/hugary1995/raccoon" class="right"><img src="../../media/framework/github-logo.png" class="github-mark"></img><img src="../../media/framework/github-mark.png" class="github-logo"></img></a><ul class="right hide-on-med-and-down"><li><a href="#!" class="dropdown-trigger" data-target="3a38b03b-7ceb-4a98-a731-b6620d0e9b14" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="286d9e2a-bef7-4d88-9a9f-8cc58c6e6801" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="92daf36e-c1f7-402a-8586-6b028f92b78e" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="51011cb3-efd5-4487-b6a0-708da9b474d7" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#" class="sidenav-trigger" data-target="41575d12-12dc-428b-a7db-eab684b1f6cf"><i class="material-icons">menu</i></a><ul class="sidenav" id="41575d12-12dc-428b-a7db-eab684b1f6cf"><li><a href="#!" class="dropdown-trigger" data-target="d519e8e3-1d18-4ddb-b100-594e23012fa9" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="0458c524-1a55-4e25-b70a-6cc6304ced7a" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="412a69e8-989c-4288-8103-73dfafdb1d55" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="d920de75-1318-4fb2-ac70-3793a2e0e21c" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#moose-search" class="modal-trigger"><i class="material-icons">search</i></a></div><ul class="dropdown-content" id="3a38b03b-7ceb-4a98-a731-b6620d0e9b14"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="286d9e2a-bef7-4d88-9a9f-8cc58c6e6801"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="92daf36e-c1f7-402a-8586-6b028f92b78e"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="51011cb3-efd5-4487-b6a0-708da9b474d7"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../index.html">Complete syntax</a></li><li><a href="../raccoon.html">RACCOON syntax</a></li><li><a href="../tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../phase_field.html">Phase field syntax</a></li><li><a href="../heat_conduction.html">Heat conduction syntax</a></li></ul><ul class="dropdown-content" id="d519e8e3-1d18-4ddb-b100-594e23012fa9"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="0458c524-1a55-4e25-b70a-6cc6304ced7a"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="412a69e8-989c-4288-8103-73dfafdb1d55"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="d920de75-1318-4fb2-ac70-3793a2e0e21c"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../index.html">Complete syntax</a></li><li><a href="../raccoon.html">RACCOON syntax</a></li><li><a href="../tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../phase_field.html">Phase field syntax</a></li><li><a href="../heat_conduction.html">Heat conduction syntax</a></li></ul></nav><div class="modal modal-fixed-footer moose-search-modal" id="moose-search"><div class="modal-content container moose-search-modal-content"><div class="gcse-search"></div></div><div class="modal-footer"><a href="#!" class="modal-close btn-flat">Close</a></div></div></header><main class="main"><div class="container"><div class="row"><div class="moose-content col s12 m12 l12"><section id="4f988fa3-d377-495a-9e74-76636d98b926" data-section-level="1" data-section-text="Transfers System"><h1 id="transfers-system">Transfers System</h1><p>When running simulations that contain <a href="../MultiApps/index.html">MultiApps</a>&mdash;simulations running other sub-simulations&mdash;it is often required to move data to and from the sub-applications. Transfer objects in MOOSE are designed for this purpose.</p><div class="card moose-alert moose-alert-note"><div class="card-title moose-alert-title"><i class="material-icons moose-inline-icon">comment</i><span class="moose-alert-title-brand">note</span></div><div class="card-content"><div class="moose-alert-content"><p>Prior to understanding Transfers it is important to grasp the idea of <a href="../MultiApps/index.html">MultiApps</a> first, so please refer to the <a href="../MultiApps/index.html">MultiApps</a> documentation for additional information.</p></div></div></div><section id="75551fe4-4fe1-4d04-941b-05750a156a94" data-section-level="2" data-section-text="Example Transfer"><h2 id="example-transfer">Example Transfer</h2><p>Assuming that the concept of <a href="../MultiApps/index.html">MultiApps</a> is understood, Transfers are best understood via an example problem. First, consider a &quot;master&quot; simulation that is solving the transient diffusion equation. This master simulation also includes two &quot;sub&quot; applications that rely on the average value of the unknown from the master application.</p><section id="8c9dfd0d-781b-42c7-94e6-5450ccc0e191" data-section-level="3" data-section-text="The " master " Simulation"><h3 id="the-master-simulation">The &quot;master&quot; Simulation</h3><p><a href="#transfers-master-multiapps">Listing 1</a> is an input file snippet showing the <a href="../MultiApps/index.html">MultiApps</a> block that includes a <a href="../../source/multiapps/TransientMultiApp.html">TransientMultiApp</a>, this sub-application will execute along with the master (at the end of each timestep) as time progresses.</p><div class="card moose-float"><div class="card-content"><p class="moose-caption"><span class="moose-caption-heading">Listing 1: </span><span class="moose-caption-text" id="transfers-master-multiapps">The <a href="../MultiApps/index.html">MultiApps</a> block of the &quot;master&quot; application that contains two sub-application                  that solves along with the master as time progresses.</span></p><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[MultiApps]
+  [pp_sub]
+    type = TransientMultiApp
+    app_type = MooseTestApp
+    positions = &#x27;0.5 0.5 0 0.7 0.7 0&#x27;
+    execute_on = timestep_end
+    input_files = sub.i
+  []
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#b9a281a9-7687-4b74-9275-2841b3af9427">(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/master.i)</a></div></div><p>For this example, the sub-applications require that the average from the master in the form of a scalar AuxVariable, see the <a href="/AuxVariables/index.md">AuxVariables</a> documentation for further information. Therefore the master will transfer the average value (computed via the <a href="../../source/postprocessors/ElementAverageValue.html">ElementAverageValue</a> Postprocessor) to a scalar AuxVariable on each sub-application. As shown in <a href="#transfers-master-transfers">Listing 2</a>, the <a href="../../source/transfers/MultiAppPostprocessorToAuxScalarTransfer.html">MultiAppPostprocessorToAuxScalarTransfer</a> is provided for this purpose.</p><div class="card moose-float"><div class="card-content"><p class="moose-caption"><span class="moose-caption-heading">Listing 2: </span><span class="moose-caption-text" id="transfers-master-transfers">The Transfers block of the &quot;master&quot; application that contains a Transfer of a                      Postprocessor to a scalar AuxVariable on sub-applications.</span></p><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[Transfers]
+  [pp_transfer]
+    type = MultiAppPostprocessorToAuxScalarTransfer
+    to_multi_app = pp_sub
+    from_postprocessor = average
+    to_aux_scalar = from_master_app
+  []
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#0a81d97d-e3f9-443c-b9b1-661afd0eaa50">(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/master.i)</a></div></div></section><section id="6bf9008f-bf37-446b-a832-b5c4856f16b8" data-section-level="3" data-section-text="The " sub " Simulations"><h3 id="the-sub-simulations">The &quot;sub&quot; Simulations</h3><p>For this simple example the sub-application must contain an appropriate AuxVariable to receiving the Postprocessor value from the master application.</p><div class="card moose-float"><div class="card-content"><p class="moose-caption"><span class="moose-caption-heading">Listing 3: </span><span class="moose-caption-text" id="transfers-sub">The AuxVariables block of the &quot;sub&quot; application that contains a scalar that the                      master application will update.</span></p><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[AuxVariables]
+  [./from_master_app]
+    order = FIRST
+    family = SCALAR
+  [../]
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#b192546e-630a-4b64-bdd8-4e3db2809faf">(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/sub.i)</a></div></div><p>The sub-applications do not have any &quot;knowledge&quot; of the master application, and simply perform calculations that utilize the scalar variable, regardless of how this scalar is computed. This approach allows the sub-application input file to run in union of independent from the master without modification, which is useful for development and testing.</p></section></section><section id="4d7c220b-de41-47db-ad7d-e4499b6f214b" data-section-level="2" data-section-text="Available Transfer Objects"><h2 id="available-transfer-objects">Available Transfer Objects</h2><p>The following is a complete list of the available Transfer objects, each links to a page with further details.</p></section><section id="98545b30-decc-4506-8fbf-667f04b97f2a" data-section-level="2" data-section-text="Available Objects"><h2 id="available-objects">Available Objects</h2><ul class="moose-syntax-list collection with-header"><li class="collection-header">Moose App</li><li class="collection-item"><a href="../../source/transfers/MultiAppCloneReporterTransfer.html">MultiAppCloneReporterTransfer</a>Declare and transfer reporter data from sub-application(s) to main application.</li><li class="collection-item"><a href="../../source/transfers/MultiAppCopyTransfer.html">MultiAppCopyTransfer</a>Copies variables (nonlinear and auxiliary) between multiapps that have identical meshes.</li><li class="collection-item"><a href="../../source/transfers/MultiAppInterpolationTransfer.html">MultiAppInterpolationTransfer</a>Transfers the value to the target domain from the nearest node in the source domain.</li><li class="collection-item"><a href="../../source/transfers/MultiAppMeshFunctionTransfer.html">MultiAppMeshFunctionTransfer</a>Transfers field data at the MultiApp position using solution the finite element function from the master application, via a &#x27;libMesh::MeshFunction&#x27; object.</li><li class="collection-item"><a href="../../source/transfers/MultiAppNearestNodeTransfer.html">MultiAppNearestNodeTransfer</a>Transfer the value to the target domain from the nearest node in the source domain.</li><li class="collection-item"><a href="../../source/transfers/MultiAppPostprocessorInterpolationTransfer.html">MultiAppPostprocessorInterpolationTransfer</a>Transfer postprocessor data from sub-application into field data on the master application.</li><li class="collection-item"><a href="../../source/transfers/MultiAppPostprocessorToAuxScalarTransfer.html">MultiAppPostprocessorToAuxScalarTransfer</a>Transfers from a postprocessor to an scalar auxiliary variable.</li><li class="collection-item"><a href="../../source/transfers/MultiAppPostprocessorTransfer.html">MultiAppPostprocessorTransfer</a>Transfers postprocessor data between the master application and sub-application(s).</li><li class="collection-item"><a href="../../source/transfers/MultiAppProjectionTransfer.html">MultiAppProjectionTransfer</a>Perform a projection between a master and sub-application mesh of a field variable.</li><li class="collection-item"><a href="../../source/transfers/MultiAppReporterTransfer.html">MultiAppReporterTransfer</a>Transfers reporter data between two applications.</li><li class="collection-item"><a href="../../source/transfers/MultiAppScalarToAuxScalarTransfer.html">MultiAppScalarToAuxScalarTransfer</a>Transfers data from a scalar variable to an auxiliary scalar variable from different applications.</li><li class="collection-item"><a href="../../source/transfers/MultiAppUserObjectTransfer.html">MultiAppUserObjectTransfer</a>Samples a variable&#x27;s value in the Master domain at the point where the MultiApp is and copies that value into a post-processor in the MultiApp</li><li class="collection-item"><a href="../../source/transfers/MultiAppVariableValueSamplePostprocessorTransfer.html">MultiAppVariableValueSamplePostprocessorTransfer</a>Samples the value of a variable within the main application at each sub-application position and transfers the value to a postprocessor on the sub-application(s) when performing the to-multiapp transfer. Reconstructs the value of a CONSTANT MONOMIAL variable associating the value of each element to the value of the postprocessor in the closest sub-application whem performing the from-multiapp transfer.</li><li class="collection-item"><a href="../../source/transfers/MultiAppVariableValueSampleTransfer.html">MultiAppVariableValueSampleTransfer</a>Transfers the value of a variable within the master application at each sub-application position and transfers the value to a field variable on the sub-application(s).</li><li class="collection-item"><a href="../../source/transfers/MultiAppVectorPostprocessorTransfer.html">MultiAppVectorPostprocessorTransfer</a>This transfer distributes the N values of a VectorPostprocessor to Postprocessors located in N sub-apps or collects Postprocessor values from N sub-apps into a VectorPostprocessor</li></ul></section><section id="6d8ca0e7-92da-4170-a2e3-d9d663975b68" data-section-level="2" data-section-text="Available Actions"><h2 id="available-actions">Available Actions</h2><ul class="moose-syntax-list collection with-header"><li class="collection-header">Moose App</li><li class="collection-item"><a href="../../source/actions/AddTransferAction.html">AddTransferAction</a>Add a Transfer object to the simulation.</li></ul></section></section><div class="moose-modal modal" id="b9a281a9-7687-4b74-9275-2841b3af9427"><div class="modal-content"><h4>(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/master.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  type = GeneratedMesh
+  dim = 2
+  nx = 10
+  ny = 10
+[]
+
+[Variables]
+  [u]
+  []
+[]
+
+[Kernels]
+  [diff]
+    type = CoefDiffusion
+    variable = u
+    coef = 0.01
+  []
+  [td]
+    type = TimeDerivative
+    variable = u
+  []
+[]
+
+[BCs]
+  [left]
+    type = DirichletBC
+    variable = u
+    boundary = left
+    value = 0
+  []
+  [right]
+    type = DirichletBC
+    variable = u
+    boundary = right
+    value = 1
+  []
+[]
+
+[Postprocessors]
+  [average]
+    type = ElementAverageValue
+    variable = u
+  []
+[]
+
+[Executioner]
+  type = Transient
+  solve_type = &#x27;PJFNK&#x27;
+  num_steps = 5
+  petsc_options_iname = &#x27;-pc_type -pc_hypre_type&#x27;
+  petsc_options_value = &#x27;hypre boomeramg&#x27;
+
+  nl_rel_tol = 1e-12
+[]
+
+[Outputs]
+  exodus = true
+[]
+
+[MultiApps]
+  [pp_sub]
+    type = TransientMultiApp
+    app_type = MooseTestApp
+    positions = &#x27;0.5 0.5 0 0.7 0.7 0&#x27;
+    execute_on = timestep_end
+    input_files = sub.i
+  []
+[]
+
+[Transfers]
+  [pp_transfer]
+    type = MultiAppPostprocessorToAuxScalarTransfer
+    to_multi_app = pp_sub
+    from_postprocessor = average
+    to_aux_scalar = from_master_app
+  []
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div><div class="moose-modal modal" id="0a81d97d-e3f9-443c-b9b1-661afd0eaa50"><div class="modal-content"><h4>(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/master.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  type = GeneratedMesh
+  dim = 2
+  nx = 10
+  ny = 10
+[]
+
+[Variables]
+  [u]
+  []
+[]
+
+[Kernels]
+  [diff]
+    type = CoefDiffusion
+    variable = u
+    coef = 0.01
+  []
+  [td]
+    type = TimeDerivative
+    variable = u
+  []
+[]
+
+[BCs]
+  [left]
+    type = DirichletBC
+    variable = u
+    boundary = left
+    value = 0
+  []
+  [right]
+    type = DirichletBC
+    variable = u
+    boundary = right
+    value = 1
+  []
+[]
+
+[Postprocessors]
+  [average]
+    type = ElementAverageValue
+    variable = u
+  []
+[]
+
+[Executioner]
+  type = Transient
+  solve_type = &#x27;PJFNK&#x27;
+  num_steps = 5
+  petsc_options_iname = &#x27;-pc_type -pc_hypre_type&#x27;
+  petsc_options_value = &#x27;hypre boomeramg&#x27;
+
+  nl_rel_tol = 1e-12
+[]
+
+[Outputs]
+  exodus = true
+[]
+
+[MultiApps]
+  [pp_sub]
+    type = TransientMultiApp
+    app_type = MooseTestApp
+    positions = &#x27;0.5 0.5 0 0.7 0.7 0&#x27;
+    execute_on = timestep_end
+    input_files = sub.i
+  []
+[]
+
+[Transfers]
+  [pp_transfer]
+    type = MultiAppPostprocessorToAuxScalarTransfer
+    to_multi_app = pp_sub
+    from_postprocessor = average
+    to_aux_scalar = from_master_app
+  []
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div><div class="moose-modal modal" id="b192546e-630a-4b64-bdd8-4e3db2809faf"><div class="modal-content"><h4>(moose/test/tests/transfers/multiapp_postprocessor_to_scalar/sub.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  type = GeneratedMesh
+  dim = 2
+  nx = 10
+  ny = 10
+[]
+
+[Variables]
+  [./u]
+  [../]
+[]
+
+[AuxVariables]
+  [./from_master_app]
+    order = FIRST
+    family = SCALAR
+  [../]
+[]
+
+[Kernels]
+  [./diff]
+    type = CoefDiffusion
+    variable = u
+    coef = 0.01
+  [../]
+  [./td]
+    type = TimeDerivative
+    variable = u
+  [../]
+[]
+
+[BCs]
+  [./left]
+    type = DirichletBC
+    variable = u
+    boundary = left
+    value = 0
+  [../]
+  [./right]
+    type = DirichletBC
+    variable = u
+    boundary = right
+    value = 2
+  [../]
+[]
+
+[Postprocessors]
+  [./from_master]
+    type = ScalarVariable
+    variable = from_master_app
+  [../]
+[]
+
+[Executioner]
+  type = Transient
+  solve_type = &#x27;PJFNK&#x27;
+  num_steps = 1
+  dt = 1
+  petsc_options_iname = &#x27;-pc_type -pc_hypre_type&#x27;
+  petsc_options_value = &#x27;hypre boomeramg&#x27;
+
+  nl_rel_tol = 1e-12
+[]
+
+[Outputs]
+  exodus = true
+  hide = from_master_app
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div></div></div></div></main></div></body><script type="text/javascript" src="../../contrib/materialize/materialize.min.js"></script><script type="text/javascript" src="../../contrib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="../../contrib/prism/prism.min.js"></script><script type="text/javascript" src="../../js/init.js"></script><script type="text/javascript" src="../../js/navigation.js"></script><script type="text/javascript" src="https://cse.google.com/cse.js?cx=008852834041008754713:g3ilnhhbbj9"></script><script type="text/javascript" src="../../js/sqa_moose.js"></script>

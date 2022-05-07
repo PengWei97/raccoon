@@ -1,0 +1,279 @@
+<!DOCTYPE html><head><meta charset="UTF-8"><title>AddPeriodicBCAction | RACCOON</title><link rel="icon" type="image/x-icon" href="../../media/raccoon_icon.png" sizes="16x16 32x32 64x64 128x128"></link><link href="../../contrib/materialize/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"></link><link href="../../contrib/prism/prism.min.css" type="text/css" rel="stylesheet"></link><link href="../../css/moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/devel_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/alert_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/content_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/sqa_moose.css" type="text/css" rel="stylesheet"></link><link href="../../css/civet_moose.css" type="text/css" rel="stylesheet"></link><script type="text/javascript" src="../../contrib/jquery/jquery.min.js"></script></head><body><div class="page-wrap"><header><nav><div class="nav-wrapper container"><a href="../../index.html" class="left moose-logo hide-on-med-and-down" id="home-button">RACCOON</a><a href="https://github.com/hugary1995/raccoon" class="right"><img src="../../media/framework/github-logo.png" class="github-mark"></img><img src="../../media/framework/github-mark.png" class="github-logo"></img></a><ul class="right hide-on-med-and-down"><li><a href="#!" class="dropdown-trigger" data-target="ebcfe222-b075-4d6b-a807-135e716d4423" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="73a217b4-9a06-48e5-a4c6-7feda4fed7fe" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="0defcc50-925c-48b5-854e-20d184bea23e" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="4891d4b4-f488-427f-8933-fd266716cc67" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#" class="sidenav-trigger" data-target="6b959f9c-cb8f-49a8-af3b-1bf0428dccc9"><i class="material-icons">menu</i></a><ul class="sidenav" id="6b959f9c-cb8f-49a8-af3b-1bf0428dccc9"><li><a href="#!" class="dropdown-trigger" data-target="8c7a457f-4312-43c1-8b24-39cb7c4a2543" data-constrainWidth="false">Getting Started<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="4fc5470e-af1e-4168-90f5-45c4bd4412aa" data-constrainWidth="false">Tutorials<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="d141f840-845c-42d4-b935-079e2e439dbe" data-constrainWidth="false">Theory<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="#!" class="dropdown-trigger" data-target="7804a09c-3523-4a4f-8af7-53ac7f13c850" data-constrainWidth="false">Documentation<i class="material-icons right">arrow_drop_down</i></a></li><li><a href="../../contribute/index.html">Contribute</a></li></ul><a href="#moose-search" class="modal-trigger"><i class="material-icons">search</i></a></div><ul class="dropdown-content" id="ebcfe222-b075-4d6b-a807-135e716d4423"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="73a217b4-9a06-48e5-a4c6-7feda4fed7fe"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="0defcc50-925c-48b5-854e-20d184bea23e"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="4891d4b4-f488-427f-8933-fd266716cc67"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../../syntax/index.html">Complete syntax</a></li><li><a href="../../syntax/raccoon.html">RACCOON syntax</a></li><li><a href="../../syntax/tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../../syntax/phase_field.html">Phase field syntax</a></li><li><a href="../../syntax/heat_conduction.html">Heat conduction syntax</a></li></ul><ul class="dropdown-content" id="8c7a457f-4312-43c1-8b24-39cb7c4a2543"><li><a href="../../getting_started/install.html">Install RACCOON</a></li><li><a href="../../getting_started/update.html">Update RACCOON</a></li><li><a href="../../getting_started/running.html">Running your first model</a></li><li><a href="../../getting_started/paraview.html">Visualization</a></li><li><a href="../../getting_started/ide.html">Code development</a></li><li><a href="../../getting_started/docs.html">Browse the documentation locally</a></li></ul><ul class="dropdown-content" id="4fc5470e-af1e-4168-90f5-45c4bd4412aa"><li><a href="../../tutorials/01_small_deformation_elasticity.html">1. Small deformation</a></li><li><a href="../../tutorials/02_mode1_brittle_fracture.html">2. Mode-I fracture</a></li><li><a href="../../tutorials/03_mode2_brittle_fracture.html">3. Mode-II fracture</a></li><li><a href="../../tutorials/04_fiber_reinforced_matrix.html">4. Fiber-reinforced matrix</a></li><li><a href="../../tutorials/05_soil_desiccation.html">5. Soil desiccation</a></li><li><a href="../../tutorials/06_large_deformation_elasticity.html">6. Large deformation</a></li><li><a href="../../tutorials/07_elastoplasticity.html">7. Elastoplasticity</a></li><li><a href="../../tutorials/08_ductile_fracture.html">8. Ductile fracture</a></li><li><a href="../../tutorials/09_three_point_bending.html">9. Three-point bending</a></li><li><a href="../../tutorials/10_quenching_bibeam.html">10. Quenching of bi-beam</a></li><li><a href="../../tutorials/11_adaptivity.html">11. Adaptive mesh refinement</a></li><li><a href="../../tutorials/12_nucleation.html">12. Crack nucleation</a></li><li><a href="../../tutorials/13_traction_separation.html">13. Traction separation law</a></li></ul><ul class="dropdown-content" id="d141f840-845c-42d4-b935-079e2e439dbe"><li><a href="../../theory/intro.html">Introduction</a></li><li><a href="../../theory/kinematics.html">State variables and kinematics</a></li><li><a href="../../theory/thermodynamics.html">Thermodynamics</a></li><li><a href="../../theory/minimization.html">The minimization problem</a></li><li><a href="../../theory/constitutive_models.html">Constitutive Models</a></li></ul><ul class="dropdown-content" id="7804a09c-3523-4a4f-8af7-53ac7f13c850"><li><a href="../../modules/index.html">Physics modules</a></li><li><a href="../../syntax/index.html">Complete syntax</a></li><li><a href="../../syntax/raccoon.html">RACCOON syntax</a></li><li><a href="../../syntax/tensor_mechanics.html">Tensor mechanics syntax</a></li><li><a href="../../syntax/phase_field.html">Phase field syntax</a></li><li><a href="../../syntax/heat_conduction.html">Heat conduction syntax</a></li></ul></nav><div class="modal modal-fixed-footer moose-search-modal" id="moose-search"><div class="modal-content container moose-search-modal-content"><div class="gcse-search"></div></div><div class="modal-footer"><a href="#!" class="modal-close btn-flat">Close</a></div></div></header><main class="main"><div class="container"><div class="row"><div class="moose-content col s12 m12 l12"><section id="d1dda6b3-c671-4f67-944e-daa8272df7e3" data-section-level="1" data-section-text="AddPeriodicBCAction"><h1 id="addperiodicbcaction">AddPeriodicBCAction</h1><p>Periodic boundary conditions enforce value constraints on separate boundaries in the mesh. This capability is useful for modeling quasi-infinite domains and systems with conserved quantities.</p><p>MOOSE has full support for Periodic BCs in</p><ul class="browser-default"><li><p>1D, 2D, and 3D. </p></li><li><p>With mesh adaptivity. </p></li><li><p>Can be restricted to specific variables.</p></li></ul><p>Supports arbitrary translation vectors for defining periodicity.</p><section id="2e62dac8-b601-4ad2-8ac6-53b27fdcb9c1" data-section-level="2" data-section-text="Automatic Periodic Boundary Detection ( recommended )"><h2 id="automatic-periodic-boundary-detection-recommended">Automatic Periodic Boundary Detection (recommended)</h2><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[BCs]
+  [./Periodic]
+    [./all]
+      variable = u
+      auto_direction = &#x27;x y&#x27;
+    [../]
+  [../]
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#b77f09bc-e1d1-4e15-8779-32bb9ab93d64">(moose/test/tests/bcs/periodic/auto_periodic_bc_test.i)</a></section><section id="9d2495ca-36a6-45ae-b9d5-c6a848dea666" data-section-level="2" data-section-text="Translation Periodic Boundaries"><h2 id="translation-periodic-boundaries">Translation Periodic Boundaries</h2><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[BCs]
+  [./Periodic]
+    [./x]
+      variable = u
+      primary = 3
+      secondary = 1
+      translation = &#x27;40 0 0&#x27;
+    [../]
+
+    [./y]
+      variable = u
+      primary = 0
+      secondary = 2
+      translation = &#x27;0 40 0&#x27;
+    [../]
+  [../]
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#3129b503-a7b9-416d-b880-0426838b14c4">(moose/test/tests/bcs/periodic/periodic_bc_test.i)</a></section><section id="c0183de0-2767-4b30-9eae-f1f672ffcb21" data-section-level="2" data-section-text="Function Transform Periodic Boundaries"><h2 id="function-transform-periodic-boundaries">Function Transform Periodic Boundaries</h2><pre class="moose-pre" style="max-height:350px;"><code class="language-text">[Functions]
+  [./tr_x]
+    type = ParsedFunction
+    value = -x*cos(pi/3)
+  [../]
+
+  [./tr_y]
+    type = ParsedFunction
+    value = x*sin(pi/3)
+  [../]
+
+  [./itr_x]
+    type = ParsedFunction
+    value = -x/cos(pi/3)
+  [../]
+
+  [./itr_y]
+    type = ParsedFunction
+    value = 0
+  [../]
+[]
+
+[BCs]
+  [./Periodic]
+    [./x]
+      primary = 1
+      secondary = 4
+      transform_func = &#x27;tr_x tr_y&#x27;
+      inv_transform_func = &#x27;itr_x itr_y&#x27;
+    [../]
+  [../]
+[]
+</code></pre><a class="moose-source-filename tooltipped modal-trigger" href="#14c1e2a7-b90e-4557-8095-3a94c86ee37a">(moose/test/tests/bcs/periodic/trapezoid.i)</a></section><section id="3bb4d8d6-e80a-4ac1-bf0b-ab1ca3404787" data-section-level="2" data-section-text="Input Parameters"><h2 id="input-parameters">Input Parameters</h2><ul class="collapsible" data-collapsible="expandable"><li><div class="collapsible-header"><span class="moose-parameter-name">active</span><span class="moose-parameter-header-default">__all__ </span><span class="moose-parameter-header-description">If specified only the blocks named will be visited and made active</span></div><div class="collapsible-body"><p class="moose-parameter-description-default"><span>Default:</span>__all__ </p><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>If specified only the blocks named will be visited and made active</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">auto_direction</span><span class="moose-parameter-header-description">If using a generated mesh, you can specifiy just the dimension(s) you want to mark as periodic</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>If using a generated mesh, you can specifiy just the dimension(s) you want to mark as periodic</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">inactive</span><span class="moose-parameter-header-description">If specified blocks matching these identifiers will be skipped.</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>If specified blocks matching these identifiers will be skipped.</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">inv_transform_func</span><span class="moose-parameter-header-description">Functions that specify the inverse transformation</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Functions that specify the inverse transformation</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">primary</span><span class="moose-parameter-header-description">Boundary ID associated with the primary boundary.</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>BoundaryName</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Boundary ID associated with the primary boundary.</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">secondary</span><span class="moose-parameter-header-description">Boundary ID associated with the secondary boundary.</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>BoundaryName</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Boundary ID associated with the secondary boundary.</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">transform_func</span><span class="moose-parameter-header-description">Functions that specify the transformation</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;std::string&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Functions that specify the transformation</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">translation</span><span class="moose-parameter-header-description">Vector that translates coordinates on the primary boundary to coordinates on the secondary boundary.</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>libMesh::VectorValue&lt;double&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Vector that translates coordinates on the primary boundary to coordinates on the secondary boundary.</p></div></li><li><div class="collapsible-header"><span class="moose-parameter-name">variable</span><span class="moose-parameter-header-description">Variable for the periodic boundary</span></div><div class="collapsible-body"><p class="moose-parameter-description-cpptype"><span>C++ Type:</span>std::vector&lt;VariableName&gt;</p><p class="moose-parameter-description-controllable"><span>Controllable:</span>No</p><p class="moose-parameter-description"><span>Description:</span>Variable for the periodic boundary</p></div></li></ul></section><section id="5d2a5a1a-56d9-4e6b-bd6d-aa5279e81aa4" data-section-level="2" data-section-text="References"><h2 id="references">References</h2>No citations exist within this document.</section></section><div class="moose-modal modal" id="b77f09bc-e1d1-4e15-8779-32bb9ab93d64"><div class="modal-content"><h4>(moose/test/tests/bcs/periodic/auto_periodic_bc_test.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  type = GeneratedMesh
+  dim = 2
+  nx = 50
+  ny = 50
+  nz = 0
+  xmax = 40
+  ymax = 40
+  zmax = 0
+  elem_type = QUAD4
+[]
+
+[Variables]
+  active = &#x27;u&#x27;
+
+  [./u]
+    order = FIRST
+    family = LAGRANGE
+  [../]
+[]
+
+[AuxVariables]
+  [./periodic_dist]
+    order = FIRST
+    family = LAGRANGE
+  [../]
+[]
+
+[Kernels]
+  active = &#x27;diff forcing dot&#x27;
+
+  [./diff]
+    type = Diffusion
+    variable = u
+  [../]
+
+  [./forcing]
+    type = GaussContForcing
+    variable = u
+  [../]
+
+  [./dot]
+    type = TimeDerivative
+    variable = u
+  [../]
+[]
+
+[AuxKernels]
+  [./periodic_dist]
+    type = PeriodicDistanceAux
+    variable = periodic_dist
+    point = &#x27;4 6 0&#x27;
+  [../]
+[]
+
+[BCs]
+  [./Periodic]
+    [./all]
+      variable = u
+      auto_direction = &#x27;x y&#x27;
+    [../]
+  [../]
+[]
+
+[Executioner]
+  type = Transient
+  dt = 1
+  num_steps = 20
+  solve_type = NEWTON
+[]
+
+[Outputs]
+  execute_on = &#x27;timestep_end&#x27;
+  file_base = out_auto
+  exodus = true
+[]
+
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div><div class="moose-modal modal" id="3129b503-a7b9-416d-b880-0426838b14c4"><div class="modal-content"><h4>(moose/test/tests/bcs/periodic/periodic_bc_test.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  type = GeneratedMesh
+  dim = 2
+  nx = 50
+  ny = 50
+  nz = 0
+  xmax = 40
+  ymax = 40
+  zmax = 0
+  elem_type = QUAD4
+[]
+
+[Variables]
+  [./u]
+    order = FIRST
+    family = LAGRANGE
+  [../]
+[]
+
+[Kernels]
+  [./diff]
+    type = Diffusion
+    variable = u
+  [../]
+
+  [./forcing]
+    type = GaussContForcing
+    variable = u
+  [../]
+
+  [./dot]
+    type = TimeDerivative
+    variable = u
+  [../]
+[]
+
+[BCs]
+  [./Periodic]
+    [./x]
+      variable = u
+      primary = 3
+      secondary = 1
+      translation = &#x27;40 0 0&#x27;
+    [../]
+
+    [./y]
+      variable = u
+      primary = 0
+      secondary = 2
+      translation = &#x27;0 40 0&#x27;
+    [../]
+  [../]
+[]
+
+[Executioner]
+  type = Transient
+  dt = 1
+  num_steps = 20
+  solve_type = NEWTON
+[]
+
+[Outputs]
+  execute_on = &#x27;timestep_end&#x27;
+  file_base = out
+  exodus = true
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div><div class="moose-modal modal" id="14c1e2a7-b90e-4557-8095-3a94c86ee37a"><div class="modal-content"><h4>(moose/test/tests/bcs/periodic/trapezoid.i)</h4><pre class="moose-pre"><code class="language-text">[Mesh]
+  file = trapezoid.e
+  uniform_refine = 1
+[]
+
+[Functions]
+  [./tr_x]
+    type = ParsedFunction
+    value = -x*cos(pi/3)
+  [../]
+
+  [./tr_y]
+    type = ParsedFunction
+    value = x*sin(pi/3)
+  [../]
+
+  [./itr_x]
+    type = ParsedFunction
+    value = -x/cos(pi/3)
+  [../]
+
+  [./itr_y]
+    type = ParsedFunction
+    value = 0
+  [../]
+[]
+
+[Variables]
+  [./u]
+    order = FIRST
+    family = LAGRANGE
+  [../]
+[]
+
+[Kernels]
+  [./diff]
+    type = Diffusion
+    variable = u
+  [../]
+
+  [./forcing]
+    type = GaussContForcing
+    variable = u
+    x_center = 2
+    y_center = -1
+    x_spread = 0.25
+    y_spread = 0.5
+  [../]
+
+  [./dot]
+    type = TimeDerivative
+    variable = u
+  [../]
+[]
+
+[BCs]
+  [./Periodic]
+    [./x]
+      primary = 1
+      secondary = 4
+      transform_func = &#x27;tr_x tr_y&#x27;
+      inv_transform_func = &#x27;itr_x itr_y&#x27;
+    [../]
+  [../]
+[]
+
+[Executioner]
+  type = Transient
+  dt = 0.5
+  num_steps = 6
+  solve_type = NEWTON
+[]
+
+[Outputs]
+  execute_on = &#x27;timestep_end&#x27;
+  file_base = out_trapezoid
+  exodus = true
+[]
+</code></pre></div><div class="modal-footer"><a class="modal-close btn-flat">Close</a></div></div></div></div></div></main></div></body><script type="text/javascript" src="../../contrib/materialize/materialize.min.js"></script><script type="text/javascript" src="../../contrib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="../../contrib/prism/prism.min.js"></script><script type="text/javascript" src="../../js/init.js"></script><script type="text/javascript" src="../../js/navigation.js"></script><script type="text/javascript" src="https://cse.google.com/cse.js?cx=008852834041008754713:g3ilnhhbbj9"></script><script type="text/javascript" src="../../js/sqa_moose.js"></script>
